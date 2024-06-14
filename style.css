@@ -1,0 +1,126 @@
+@font-face {
+    font-family: 'Thunder';
+    src: url('/Users/nice/Downloads/Thunder-SemiBold.ttf') format('truetype');
+    font-style: normal;
+}
+@font-face {
+    font-family: 'LibreCaslon-Italic';
+    src: url('/Users/nice/Downloads/LibreCaslonText-Italic.ttf') format('truetype');
+    font-style: normal;
+}
+@font-face {
+    font-family: 'LibreCaslon-Regular';
+    src: url('/Users/nice/Downloads/LibreCaslonText-Regular.ttf') format('truetype');
+    font-style: normal;
+}
+
+
+
+body {
+    font-family: 'LibreCaslon-Regular', serif;
+    margin: 0 auto;
+    padding: 64px;
+    background-color: #F6F0E7;
+    max-width: 1920px;
+    color: #7A70B6;
+}
+
+nav {
+    display: flex;
+    justify-content: flex-end; /* Align items to the right */
+    width: 100%; /* Ensure nav takes full width */
+}
+
+.links {
+    display: flex; /* Ensure links are in a row */
+    list-style-type: none; /* Remove bullet points */
+    margin: 0; /* Remove default margin */
+    padding: 0; /* Remove default padding */
+}
+
+.links li {
+    margin: 0 10px;
+}
+
+.links a {
+    text-decoration: none;
+    color: #7A70B6;
+}
+
+.container img{
+    max-width: 280px;
+}
+
+.left-aligned{
+    margin-top: 12rem;
+    margin-left:20px;
+}
+
+.left-aligned p {
+    max-width: 350px;
+    margin-top:30px;
+}
+
+.maxsize {
+    font-family: 'Thunder', sans-serif;
+    text-align: center; /* Center text */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 40vh;
+    margin-top: 30px;
+    margin-bottom: 0;
+    padding: 0;
+}
+
+.footer{
+    margin-left:20px;
+    margin-top: 0;
+}
+
+@media (max-width: 768px) {
+    body {
+        padding: 16px;
+        text-align: center;
+    }
+
+    .left-aligned {
+        margin-top: 4rem;
+    }
+
+    .left-aligned p {
+        margin: 0 auto;
+        max-width: 350px;
+        margin-top: 30px;
+        margin-bottom: 50px;
+    }
+
+    .maxsize {
+        font-size: 20vw; /* Adjust font size for smaller screens */
+      
+        margin: 0 auto;
+    }
+
+    nav {
+        justify-content: center; /* Center nav items on small screens */
+    }
+
+    .links {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .links li {
+        margin: 10px 0;
+    }
+
+    .footer {
+        margin-left: 10px;
+    }
+}
+
+@media (max-width: 1200px) {
+    .maxsize {
+        font-size: 25vw; /* Adjust font size for smallest screens */
+    }
+}
